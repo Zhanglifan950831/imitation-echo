@@ -1,5 +1,6 @@
 # imitation-echo
-仿echo移动端展示
+> 仿echo移动端展示
+
 # vue
 
 > A Vue.js project
