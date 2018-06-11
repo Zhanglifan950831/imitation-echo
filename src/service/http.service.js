@@ -8,10 +8,14 @@ import axios from 'axios'
  * @constructor
  */
 let GET = (requestUrl, param) => {
-  return axios.get(requestUrl, {
-    params: param
-  })
-}
+  return new Promise(resolve => {
+    axios.get(requestUrl, {
+      params: param
+    }).then(info => {
+      resolve(info.data);
+    });
+  });
+};
 
 export default {
   GET: GET
