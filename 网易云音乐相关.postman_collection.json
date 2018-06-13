@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "682fa352-04a6-4ad3-802f-ffb843c1a19d",
+		"name": "网易云音乐相关",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新歌列表",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "params",
+							"value": "GLfy+7Dvo6av7iMWrgNdqqC9DBFUIDn7G3o2H3q5k4I=",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "encSecKey",
+							"value": "1876e6340b7b4b7fa5a3fdb9a64456362ba3de87ea975a94498f78b55ecffba0be2d0e8f9985130c3a24edb883ca353f1a334f2037de2a1e0ddb0fab79202dfaabac1fc04f99a7ad6f31b6c2c00a0ea8d29397cc164a17f46cc18002e474eb9082c043da6aa7e70bc8bb23cd0fa3af4beb052e0afadfa8fc74b834802b6afe90",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://music.163.com/weapi/personalized/newsong",
+					"protocol": "https",
+					"host": [
+						"music",
+						"163",
+						"com"
+					],
+					"path": [
+						"weapi",
+						"personalized",
+						"newsong"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "热门搜索",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "params",
+							"value": "7eDmSlKS0aiK8RveLRB2eVbxCyvkD4Qhjj9wMIhcdu4=",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "encSecKey",
+							"value": "654d93ed596c400ecbac195b6e05c54611850ffdfbfdffcb1c44a2dbcaf3eb9e18a9c88623d8eff9bc77cf9f6d3f1b77da243c6873f937d916544f3375c6ee0fbfefc337f0f6af780a838c01c5336dac80c7702239e3954e55a2804656778d2688e5020e414ea092a528d87cf2dc9dcb0744522eea5e2cc896a3ee031c463d6f",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://music.163.com/weapi/search/hot",
+					"protocol": "https",
+					"host": [
+						"music",
+						"163",
+						"com"
+					],
+					"path": [
+						"weapi",
+						"search",
+						"hot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "热歌榜",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "params",
+							"value": "KXcsE8VEU0Bc2vusU59EJdKXCRybEC2vQ34LpEO/Vf5HwLFZLthOtwXvF9+wqeW8",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "encSecKey",
+							"value": "d7fda30b715f197568ee1126ac4af88462a382c325ee313f4b726fc13f246c95b27975705f4b3045aace8ef946b2b6340c9dea73fc973294fe967a46c2e8e0da5a2e664e86f947cc48b9327b964ab615ac3ea39cbeae18942f9a3229db5049719d1d95e39f4d8c8a40446a4965c40acbb3c7c79e9e22680877687befae84ca2d",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://music.163.com/weapi/v3/playlist/detail",
+					"protocol": "https",
+					"host": [
+						"music",
+						"163",
+						"com"
+					],
+					"path": [
+						"weapi",
+						"v3",
+						"playlist",
+						"detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "歌曲详情",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://music.163.com/api/song/detail/?id=28240138&ids=[28240138]",
+					"protocol": "http",
+					"host": [
+						"music",
+						"163",
+						"com"
+					],
+					"path": [
+						"api",
+						"song",
+						"detail",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "28240138"
+						},
+						{
+							"key": "ids",
+							"value": "[28240138]"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
